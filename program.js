@@ -4,7 +4,7 @@ var serviceUrl = 'http://metadata.helmet-kirjasto.fi/search/author.json?query=Ca
 var pageBody = '<html><head><title>Mashup</title></head><body>No data.</body></html>';
 
 http.createServer(function (req, res) {
-  res.writeHead(200, {'Content-Type': 'text/html', 'charset': 'utf-8'});
+  res.writeHead(200, {'Content-Type': 'text/html; charset=utf-8'});
   res.end(pageBody);
 }).listen(13666, '127.0.0.1');
 
