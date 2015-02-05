@@ -28,4 +28,6 @@ http.get(serviceUrl, function (res) {
     });
     pageBody = '<html><head><title>Mashup</title></head><body>' + booksHtml + '</body></html>';
   });
+}).on('error', function(e) {
+      console.log('Error: ', e);
 });
